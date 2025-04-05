@@ -36,7 +36,7 @@ const UserInfo = () => {
   return (
     <UserInfoStyled className="user-info">
       <div className="user">
-        <img src={currentUser.avatar || "/avatar.png"} />
+        <img src={currentUser.avatar || "./avatar.png"} />
         <h4>{currentUser.username}</h4>
       </div>
       <div className="icons">

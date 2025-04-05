@@ -196,7 +196,12 @@ const Login = () => {
     <LoginStyled
       className="login"
       style={{
-        flexDirection: isMobile && isSwap ? "column-reverse" : "column",
+        flexDirection:
+          isMobile && isSwap
+            ? "column-reverse"
+            : isMobile && !isSwap
+            ? "column"
+            : "row",
       }}
     >
       <section className="sign-in">

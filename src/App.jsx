@@ -59,7 +59,6 @@ const App = () => {
       }
     }
 
-    console.log("ss");
   }, [currentUser, isInChat, isInDetail]);
 
   if (isLoading) return <Loading>Loading...</Loading>;
@@ -68,13 +67,13 @@ const App = () => {
     <Container
       style={{
         width: isMobile ? "100vw" : "90vw",
-        height: isMobile ? "100vh" : "90vh",
         borderRadius: isMobile ? "0px" : "10px",
+        marginTop: isMobile ? "15vw" : "",
       }}
     >
       {isMobile ? (
         <Holder />
-      ) : (
+      ) : currentUser ? (
         <>
           <List />
           {chatId ? (
@@ -86,6 +85,8 @@ const App = () => {
             <EmptyErea></EmptyErea>
           )}
         </>
+      ) : (
+        <Login></Login>
       )}
 
       <Notification />
