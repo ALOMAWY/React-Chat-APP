@@ -355,9 +355,9 @@ const Chat = () => {
               chat?.messages[index + 1].senderId == message.senderId ? (
                 ""
               ) : message.senderId !== currentUser.id ? (
-                <img src={currentUser.avatar || "./avatar.png"} alt="" />
-              ) : (
                 <img src={user.avatar || "./avatar.png"} alt="" />
+              ) : (
+                <img src={currentUser.avatar || "./avatar.png"} alt="" />
               )}
             </div>
             <div className="texts">
