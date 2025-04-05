@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "emoji-picker-react": "^4.12.2",
+    "firebase": "^11.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-toastify": "^11.0.5",
+    "styled-components": "^6.1.16",
+    "timeago.js": "^4.0.2",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
